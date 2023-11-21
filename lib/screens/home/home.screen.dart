@@ -23,9 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: InkWell(
           onTap: () => context.goNamed(checking_phone),
           child: Container(
-            margin: const EdgeInsets.only(top: 10, bottom: 10, left: 5),
-            height: 50,
-            width: 50,
+            margin:
+                const EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 5),
+            height: 30,
+            width: 30,
             decoration: ShapeDecoration(
               shape: OvalBorder(
                 side: BorderSide(width: 2, color: primaryColor),
@@ -39,9 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: <Widget>[
           Container(
-            margin: const EdgeInsets.only(top: 10, bottom: 10, right: 5),
-            height: 50,
-            width: 50,
+            margin: const EdgeInsets.only(top: 20, bottom: 20, right: 20),
+            height: 30,
+            width: 30,
             decoration: ShapeDecoration(
               shape: OvalBorder(
                 side: BorderSide(width: 2, color: primaryColor),
