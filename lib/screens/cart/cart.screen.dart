@@ -43,15 +43,18 @@ class _CartScreenState extends State<CartScreen> {
             child: Row(
               children: const [
                 Text(
-                  '0',
+                  '2',
                   style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                 )
               ],
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(right: 10.0),
-            child: Icon(Icons.shopping_bag),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: Icon(
+              Icons.shopping_bag,
+              color: primaryColor,
+            ),
           )
         ],
       ),
@@ -66,6 +69,7 @@ class _CartScreenState extends State<CartScreen> {
                     height: 10,
                   ),
                   InkWell(
+                    onTap: () => context.goNamed(home),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(

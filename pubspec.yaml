@@ -44,6 +44,9 @@ dependencies:
   flutter_spinkit: ^5.2.0
   google_fonts: 
   pinput: ^3.0.1
+  date_time_picker: 
+  location: ^4.1.1
+  geolocator: ^7.7.1
 
 dev_dependencies:
   flutter_test:
